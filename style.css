@@ -605,7 +605,8 @@ img {
 
 /* Left Section Styling */
 .left-section {
-    width: 400px; /* Fixed width for the left section */
+    width: 100%;
+    max-width: 400px; /* Fixed width for the left section */
     height: 100vh;
     background-color: #021526;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
@@ -817,46 +818,45 @@ header {
 .hero {
     height: 91vh;
     text-align: center;
-    padding: 50px 20px;
     background: #021526;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: left;
-}
+    flex-direction: column;
 
+}
 
 
 .hero-container{
-    width: 60%;
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 
+
 .hero-title {
-    font-size: 4em;
-    margin: 0;
+    font-size: clamp(1rem, 8vw, 4rem);
     font-weight: 600;
     color: #fff;
 }
 
 .hero-subtitle {
-    font-size: 4em;
-    margin: 10px 0;
+    font-size: clamp(10px, 8vw, 4rem);
 }
 
 .hero-bio{
-    width: 55%;
     margin-left: 5px;
     line-height: 1.6;
+    text-align: start;
+    max-width: 460px;
 }
 
 
 
 
 .my-weapons {
-    margin-top: 40px;
     margin-right: 30px;
     background-color: #021526;
     color: rgba(46,157,255,1);
